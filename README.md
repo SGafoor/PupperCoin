@@ -14,14 +14,16 @@ To begin this code we created a file named `PupperCoin.sol` where in the paramet
 
 ![image](https://user-images.githubusercontent.com/83382006/136881305-dc7b6b64-4a33-4799-8351-a098ada7bf16.png)
 
-Now setting 
-
+As shown below we bootstrapper the foloowing contracts using the OpenZepplin library: Specifically `Crowdsale`, `MintedCrowdsale`, `CappedCrowdsale`, `TimedCrowdsale`, `RefundablePostDeliveryCrowdsale.`
+The parameters for all of these include, name, symbol, wallet and goal. 
+when passing the open and close times, now, now + 24 weks was used from the PupperCoinCrowdsaleDeployer.
 ![image](https://user-images.githubusercontent.com/83382006/136881147-fe5dda0c-0318-49b7-b5ff-4e66f3890c50.png)
 
 ![image](https://user-images.githubusercontent.com/83382006/136881224-ab629dbb-8f06-4d1c-a9ee-36c5727ebfd7.png)
 
 ![image](https://user-images.githubusercontent.com/83382006/136881263-5fcb5d12-8075-419d-adbe-637c3b28dc81.png)
 
+Once that was completed we compiled and deployed the Deployer and was given acces to the Token_address, and Token_sale_address. Using notepad both were saved and Using MetaMask PupperCoin was created as PUP. 
 
 ![image](https://user-images.githubusercontent.com/83382006/136877605-9091b831-8cfd-48b3-8643-8e4f2dc01ab6.png)
 
@@ -32,4 +34,11 @@ Now setting
 ![image](https://user-images.githubusercontent.com/83382006/136877770-add3e3ea-dd15-4be3-bd23-76f572ac265a.png)
 
 
+
+
+Now to test the CrowdSale.
+
+You can test the time functionality by replacing now with fakenow, and creating a setter function close time to be now + 5 minutes. The Deployer Network is the Ropsten network. We deploy and test the Netowrk and see how much we get. 
+
+As seen here.
 ![image](https://user-images.githubusercontent.com/83382006/136877807-c0f2e00f-8d9b-4dfb-88d5-45734290f390.png)
