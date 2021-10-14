@@ -17,12 +17,11 @@ contract PupperCoinCrowdsale is Crowdsale, MintedCrowdsale, CappedCrowdsale, Tim
         // @TODO: Fill in the constructor parameters!
         
         uint rate, // rate in TKNbits
-        //string memory name, 
-        //string memory symbol,
+        
         
         address payable wallet, //sale beneficiary
-        PupperCoin pupper_token, //name of token
-        uint goal, //goal for crowdsale
+        PupperCoin pupper_token, //name 
+        uint goal, //goal 
         uint open,
         uint close //unit cap
     )
@@ -31,8 +30,7 @@ contract PupperCoinCrowdsale is Crowdsale, MintedCrowdsale, CappedCrowdsale, Tim
         CappedCrowdsale(goal)
         
         // @TODO: Pass the constructor parameters to the crowdsale contracts.
-        //TimedCrowdsale(open = now, close = now + 1 minutes) in this case
-        //TimedCrowdsale(open = now, close = now + 24 weeks) to set the times properly from your PupperCoinCrowdsaleDeployer contract.
+   
         
         
         TimedCrowdsale(open, close)

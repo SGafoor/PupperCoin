@@ -36,6 +36,10 @@ contract PupperCoinCrowdsale is Crowdsale, MintedCrowdsale, CappedCrowdsale, Tim
         public
     {
         // constructor can stay empty
+    }
+    function fastforward() public {
+        fakenow =block.timestamp;
+
         
     }
 }
